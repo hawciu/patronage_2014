@@ -1,9 +1,8 @@
 from flask import Flask
-a='a'
-app = Flask(a)
+app = Flask(__name__)
 
-@app.route('/xd')
-def we():
+@app.route('/')
+def hello_world():
     return 'Hello World!'
 
 if __name__ == "__main__":
